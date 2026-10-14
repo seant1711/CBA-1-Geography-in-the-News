@@ -429,7 +429,7 @@ function brief(id){
 
   h+='<section class="panel"><h3>Step 1: choose your story</h3>';
   if(t.stories.length){
-    h+='<p class="fresh">Recent stories. Open the link, read it, then tap <b>Choose this story</b> on the one you like. Agree it with your teacher.</p>';
+    h+='<p class="fresh">Recent stories. Open the link, read it, then tap <b>Choose this story</b> on the one you like. Agree it with your teacher. Some links may stop working or sit behind a sign-up wall. If one fails, search the headline and source name, or choose another story.</p>';
     t.stories.forEach(function(s,i){
       h+='<div class="story'+(chosen===i?' on':'')+'" data-s="'+i+'"><div class="meta">';
       if(s.top){h+='<span class="pill top">Top pick</span>'}
@@ -497,7 +497,7 @@ function brief(id){
     h+='<a href="'+esc(l[1])+'" target="_blank" rel="noopener noreferrer">'+esc(l[0])+' ↗<small>'+esc(l[2])+'</small></a>';
   });
   h+='<a href="https://curriculumonline.ie/Junior-cycle/Junior-Cycle-Subjects/Geography" target="_blank" rel="noopener noreferrer">Official Geography CBA guidelines ↗<small>Curriculum Online</small></a></section>';
-  h+='<p class="note">Your ticks and chosen story are saved on this device only. Some news sites limit free articles. Always say exactly which pages you used and check facts in more than one source.</p>';
+  h+='<p class="note">Your ticks and chosen story are saved on this device only. Some news sites limit free articles, and links can go out of date. Always say exactly which pages you used and check facts in more than one source.</p>';
   app.innerHTML=h;
 
   var boxes=app.querySelectorAll('.chk input');
